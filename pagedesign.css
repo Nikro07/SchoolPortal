@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #4a6cf7;
+    color: white;
+}
+
+.nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.login-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+    text-align: center;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 8px solid #4a6cf7;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.course-card::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: repeating-linear-gradient(
+        to bottom,
+        #ddd,
+        #ddd 5px,
+        transparent 5px,
+        transparent 10px
+    );
+}
+
+.course-card h3 {
+    margin-left: 15px;
+}
+
+.course-card p {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.course-card button {
+    margin-left: 15px;
+    padding: 5px 10px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #e0e6ff;
+    text-align: center;
+}
+
+.catalog1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
+
+  .btn {
+    background-color: #4a6cf7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
